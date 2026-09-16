@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #0F172A;     
-    --accent-color: #2563EB;      
+    --primary-color: #0F172A;
+    --accent-color: #2563EB;
     --accent-hover: #1D4ED8;
     --bg-body: #F8FAFC;
     --bg-surface: #FFFFFF;
@@ -11,7 +11,7 @@
     --radius-md: 10px;
     --radius-lg: 16px;
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
-    --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -32,14 +32,13 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 20px;
 }
 
-/* --- NAV BAR --- */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border-color);
     position: sticky;
@@ -51,30 +50,30 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 65px;
 }
 
 .brand {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     font-weight: 700;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     color: var(--primary-color);
 }
 
 .brand-icon {
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
     stroke: var(--accent-color);
 }
 
 .nav-links {
     display: flex;
-    gap: 24px;
+    gap: 20px;
 }
 
-.nav-item {
+.nav-links a {
     text-decoration: none;
     color: var(--text-secondary);
     font-size: 0.9rem;
@@ -82,46 +81,46 @@ body {
     transition: color 0.2s;
 }
 
-.nav-item:hover, .nav-item.active {
+.nav-links a:hover {
     color: var(--accent-color);
 }
 
 .hero {
-    padding: 80px 0 60px;
+    padding: 60px 0 40px;
     text-align: center;
-    background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-body) 100%);
+    background: #FFFFFF;
     border-bottom: 1px solid var(--border-color);
 }
 
 .badge-hero {
     display: inline-block;
-    padding: 6px 16px;
+    padding: 4px 12px;
     background-color: #EFF6FF;
     color: var(--accent-color);
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     border: 1px solid #DBEAFE;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     letter-spacing: -0.02em;
 }
 
 .hero p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-secondary);
-    max-width: 680px;
+    max-width: 620px;
     margin: 0 auto;
 }
 
 .section {
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 .bg-light {
@@ -132,24 +131,24 @@ body {
 
 .section-header {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 35px;
 }
 
 .section-header h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .section-header p {
     color: var(--text-secondary);
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 24px;
 }
 
@@ -157,7 +156,7 @@ body {
     background-color: var(--bg-surface);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
-    padding: 28px;
+    padding: 24px;
     box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
@@ -166,7 +165,7 @@ body {
 }
 
 .download-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
     box-shadow: var(--shadow-md);
 }
 
@@ -174,12 +173,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .file-icon {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
@@ -187,36 +186,37 @@ body {
 }
 
 .file-icon svg {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
 }
 
-.pdf-icon { background-color: #FEF2F2; color: #EF4444; }
-.word-icon { background-color: #EFF6FF; color: #3B82F6; }
-.future-icon { background-color: #F1F5F9; color: #64748B; }
+.img-icon { background-color: #F0FDF4; color: #16A34A; }
+.ppt-icon { background-color: #FFF7ED; color: #EA580C; }
+.word-icon { background-color: #EFF6FF; color: #2563EB; }
+.pdf-icon { background-color: #FEF2F2; color: #DC2626; }
 
 .file-format {
     font-size: 0.75rem;
     font-weight: 700;
     padding: 4px 10px;
     border-radius: 6px;
-    background-color: #FEF2F2;
-    color: #991B1B;
 }
 
-.format-word { background-color: #EFF6FF; color: #1E40AF; }
-.format-future { background-color: #F1F5F9; color: #475569; }
+.format-img { background-color: #DCFCE7; color: #15803D; }
+.format-ppt { background-color: #FFEDD5; color: #C2410C; }
+.format-word { background-color: #DBEAFE; color: #1E40AF; }
+.format-pdf { background-color: #FEE2E2; color: #991B1B; }
 
 .download-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .download-card p {
     font-size: 0.9rem;
     color: var(--text-secondary);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -225,19 +225,17 @@ body {
     justify-content: center;
     gap: 8px;
     width: 100%;
-    padding: 12px 20px;
+    padding: 10px 16px;
     border-radius: var(--radius-md);
     font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
-    border: none;
-    cursor: pointer;
     transition: background-color 0.2s;
 }
 
 .btn svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
 }
 
 .btn-primary {
@@ -249,30 +247,24 @@ body {
     background-color: var(--accent-hover);
 }
 
-.btn-disabled {
-    background-color: #E2E8F0;
-    color: #94A3B8;
-    cursor: not-allowed;
-}
-
 .rules-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    gap: 16px;
 }
 
 .rule-item {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 14px;
     background-color: var(--bg-body);
-    padding: 20px;
+    padding: 16px;
     border-radius: var(--radius-md);
     border: 1px solid var(--border-color);
 }
 
 .rule-number {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 700;
     color: var(--accent-color);
     background: #EFF6FF;
@@ -281,7 +273,7 @@ body {
 }
 
 .rule-item p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--text-secondary);
 }
 
@@ -297,16 +289,17 @@ body {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
+    font-size: 0.9rem;
 }
 
 .data-table th, .data-table td {
-    padding: 16px 24px;
+    padding: 14px 20px;
     border-bottom: 1px solid var(--border-color);
 }
 
 .data-table th {
     background-color: #F8FAFC;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--text-secondary);
@@ -314,51 +307,50 @@ body {
 
 .data-table td code {
     background-color: #F1F5F9;
-    padding: 4px 8px;
+    padding: 3px 6px;
     border-radius: 4px;
     font-family: monospace;
-    font-size: 0.9rem;
     color: #0F172A;
 }
 
 .tag-money {
     background-color: #ECFDF5;
     color: #047857;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
 .arca-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
 }
 
 .arca-card {
     background-color: var(--bg-body);
     border: 1px solid var(--border-color);
-    padding: 24px;
+    padding: 20px;
     border-radius: var(--radius-md);
 }
 
 .arca-card h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--accent-color);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .arca-card p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--text-secondary);
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .arca-answer {
     font-size: 0.85rem;
     border-top: 1px dashed var(--border-color);
-    padding-top: 12px;
+    padding-top: 10px;
     color: var(--text-muted);
 }
 
@@ -369,7 +361,7 @@ body {
 .footer {
     background-color: var(--bg-surface);
     border-top: 1px solid var(--border-color);
-    padding: 30px 0;
+    padding: 24px 0;
     text-align: center;
     color: var(--text-muted);
     font-size: 0.85rem;

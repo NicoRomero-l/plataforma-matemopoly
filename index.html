@@ -3,135 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monopolio Matemático - Plataforma Didáctica</title>
+    <title>Monopolio Matemático - Centro de Recursos</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Navegación Superior -->
     <header class="navbar">
         <div class="container nav-container">
             <div class="brand">
-                <svg class="brand-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                <svg class="brand-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
                 <span>Monopolio Matemático</span>
             </div>
             <nav class="nav-links">
-                <a href="#descargas" class="nav-item active">Descargas</a>
-                <a href="#reglas" class="nav-item">Reglas</a>
-                <a href="#propiedades" class="nav-item">Propiedades</a>
-                <a href="#arca" class="nav-item">Comodin</a>
+                <a href="#descargas">Descargas</a>
+                <a href="#reglas">Reglas y Réferi</a>
+                <a href="#propiedades">Propiedades</a>
+                <a href="#arca">Comodines</a>
             </nav>
         </div>
     </header>
 
+    <!-- Encabezado Principal -->
     <section class="hero">
         <div class="container hero-content">
-            <span class="badge-hero">Recursos Educativos e Interactivos</span>
-            <h1>Centro de Recursos para Monopolio Matemático</h1>
-            <p>Accede a las plantillas oficiales, reglas generales y contenido imprimible para dinamizar el aprendizaje del cálculo mental y operaciones combinadas.</p>
+            <span class="badge-hero">Material Didáctico e Interactivo</span>
+            <h1>Centro de Descargas y Recursos</h1>
+            <p>Accede a las plantillas oficiales, tableros, tarjetas interactivas y reglas completas del juego.</p>
         </div>
     </section>
 
+    <!-- Sección 1: Descargas de Archivos -->
     <section id="descargas" class="section container">
         <div class="section-header">
-            <h2>Archivos y Plantillas Disponibles</h2>
-            <p>Descarga el contenido completo para imprimir o editar libremente.</p>
+            <h2>Archivos Disponibles para Descargar</h2>
+            <p>Haz clic en los botones para obtener los componentes oficiales del juego.</p>
         </div>
 
         <div class="cards-grid">
+            <!-- Imagen Tablero -->
             <div class="download-card">
                 <div class="card-top">
-                    <div class="file-icon pdf-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    <div class="file-icon img-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
                     </div>
-                    <span class="file-format">PDF</span>
+                    <span class="file-format format-img">JPG / PNG</span>
                 </div>
-                <h3>Plantillas Oficiales y Manual</h3>
-                <p>Modelos estructurados de tarjetas vacías para Comodín e Incógnita, listos para personalización, además del reglamento unificado.</p>
-                <div class="card-footer">
-                    <a href="plantillas_monopolio_matematico_v2.pdf" download class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                        Descargar PDF
-                    </a>
-                </div>
+                <h3>Tablero de Juego</h3>
+                <p>Imagen en alta resolución con el diseño oficial del tablero de Monopolio Matemático para imprimir o proyectar.</p>
+                <a href="Tablero_Monopolio_Matematico.jpeg" download class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Descargar Tablero
+                </a>
             </div>
 
-            <!-- Documento Word -->
+            <!-- Presentación PowerPoint Tarjetas -->
+            <div class="download-card">
+                <div class="card-top">
+                    <div class="file-icon ppt-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6h3a2 2 0 0 0 0-4h-3"/></svg>
+                    </div>
+                    <span class="file-format format-ppt">PPTX</span>
+                </div>
+                <h3>Tarjetas Intercambiables</h3>
+                <p>Presentación editable con el diseño reutilizable para Comodines e Incógnitas del juego.</p>
+                <a href="Tarjetas_Intercambiables.pptx" download class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Descargar PowerPoint
+                </a>
+            </div>
+
+            <!-- Documento Word Completo -->
             <div class="download-card">
                 <div class="card-top">
                     <div class="file-icon word-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
                     </div>
                     <span class="file-format format-word">DOCX</span>
                 </div>
-                <h3>Juego Completo (Editable)</h3>
-                <p>Documento editable que contiene la lista de 16 Propiedades y 16 Tarjetas de Arca Comunal con operaciones y soluciones.</p>
-                <div class="card-footer">
-                    <a href="Monopolio_Matematico_Completo.docx" download class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                        Descargar Word
-                    </a>
-                </div>
+                <h3>Juego Completo y Reglas</h3>
+                <p>Documento Word con las reglas actualizadas, el rol del réferi y la lista completa de retos.</p>
+                <a href="Monopolio_Matematico_Completo.docx" download class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Descargar Word
+                </a>
             </div>
 
-            <!-- Módulo para Contenido Futuro -->
-            <div class="download-card card-future">
+            <!-- PDF Plantillas -->
+            <div class="download-card">
                 <div class="card-top">
-                    <div class="file-icon future-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                    <div class="file-icon pdf-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
                     </div>
-                    <span class="file-format format-future">+ Info</span>
+                    <span class="file-format format-pdf">PDF</span>
                 </div>
-                <h3>Próximas Actualizaciones</h3>
-                <p>Sección destinada para alojar nuevos tableros interactivos, problemas avanzados y nuevos paquetes de ejercicios.</p>
-                <div class="card-footer">
-                    <button class="btn btn-disabled" disabled>En Desarrollo</button>
-                </div>
+                <h3>Plantillas Imprimibles</h3>
+                <p>Archivo en PDF para impresión directa del material de apoyo y manual pedagógico.</p>
+                <a href="plantillas_monopolio_matematico_v2.pdf" download class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Descargar PDF
+                </a>
             </div>
-
         </div>
     </section>
 
+    <!-- Sección 2: Reglas Oficiales y Rol del Réferi -->
     <section id="reglas" class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <h2>Reglas Fijas del Juego</h2>
-                <p>Normas fundamentales para garantizar un correcto flujo de las partidas.</p>
+                <h2>Reglas Fijas y Normativa</h2>
+                <p>Actualización reglamentaria del juego y funciones del réferi.</p>
             </div>
             
             <div class="rules-grid">
                 <div class="rule-item">
                     <span class="rule-number">01</span>
-                    <p>Cada jugador inicia con la misma cantidad de dinero matemático asignado por el banco.</p>
+                    <p>Cada jugador inicia con 50 puntos otorgados al comienzo de la partida[cite: 4].</p>
                 </div>
                 <div class="rule-item">
                     <span class="rule-number">02</span>
-                    <p>Los jugadores lanzan los dados en su turno y avanzan por el tablero según el número obtenido.</p>
+                    <p>Se utilizarán 8 tarjetas entre comodines e incógnitas durante el juego[cite: 4].</p>
                 </div>
                 <div class="rule-item">
                     <span class="rule-number">03</span>
-                    <p>En cada casilla se debe cumplir la acción correspondiente (comprar propiedad, pagar alquiler o resolver reto).</p>
+                    <p>La partida consta de 3 vueltas completas. El jugador con más puntaje al final será el ganador[cite: 4].</p>
                 </div>
                 <div class="rule-item">
                     <span class="rule-number">04</span>
-                    <p>Si un jugador cae en una propiedad ajena, debe pagar obligatoriamente el valor de alquiler establecido.</p>
+                    <p>Resolver un comodín correctamente otorga +50 puntos; si falla, retrocede 2 casillas y pierde 25 puntos[cite: 4].</p>
                 </div>
                 <div class="rule-item">
                     <span class="rule-number">05</span>
-                    <p>Los retos matemáticos deben resolverse individualmente para obtener premios o evitar penalizaciones.</p>
+                    <p>No se permite recibir ayuda externa durante la resolución de retos individuales[cite: 4].</p>
                 </div>
                 <div class="rule-item">
                     <span class="rule-number">06</span>
-                    <p>Gana el jugador que posea el mayor patrimonio matemático acumulado al finalizar el tiempo o las rondas.</p>
+                    <p>El réferi controla el tiempo, verifica los resultados antes de avanzar y registra la puntuación[cite: 4].</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Sección 3: Vista de Propiedades -->
     <section id="propiedades" class="section container">
         <div class="section-header">
             <h2>Propiedades Matemáticas</h2>
-            <p>Muestras de las operaciones asignadas a cada propiedad del juego.</p>
+            <p>Operaciones combinadas asignadas a cada casilla del tablero[cite: 4].</p>
         </div>
 
         <div class="table-container">
@@ -145,70 +163,66 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Calle de las Fracciones</td>
-                        <td><code>(150 × 4) + 300 - 200</code></td>
-                        <td><span class="tag-money">700 monedas</span></td>
+                        <td>Calle de las Fracciones[cite: 4]</td>
+                        <td><code>(150 × 4) + 300 - 200</code>[cite: 4]</td>
+                        <td><span class="tag-money">700 monedas</span>[cite: 4]</td>
                     </tr>
                     <tr>
-                        <td>Avenida del Álgebra</td>
-                        <td><code>500 + (80 × 5) ÷ 2</code></td>
-                        <td><span class="tag-money">700 monedas</span></td>
+                        <td>Avenida del Álgebra[cite: 4]</td>
+                        <td><code>500 + (80 × 5) ÷ 2</code>[cite: 4]</td>
+                        <td><span class="tag-money">700 monedas</span>[cite: 4]</td>
                     </tr>
                     <tr>
-                        <td>Barrio de la Geometría</td>
-                        <td><code>(250 × 3) - 150 + 100</code></td>
-                        <td><span class="tag-money">700 monedas</span></td>
+                        <td>Barrio de la Geometría[cite: 4]</td>
+                        <td><code>(250 × 3) - 150 + 100</code>[cite: 4]</td>
+                        <td><span class="tag-money">700 monedas</span>[cite: 4]</td>
                     </tr>
                     <tr>
-                        <td>Ciudad de la Estadística</td>
-                        <td><code>900 ÷ 3 + (120 × 4)</code></td>
-                        <td><span class="tag-money">780 monedas</span></td>
+                        <td>Ciudad de la Estadística[cite: 4]</td>
+                        <td><code>900 ÷ 3 + (120 × 4)</code>[cite: 4]</td>
+                        <td><span class="tag-money">780 monedas</span>[cite: 4]</td>
                     </tr>
                     <tr>
-                        <td>Parque del Cálculo Mental</td>
-                        <td><code>(350 + 150) × 2 - 200</code></td>
-                        <td><span class="tag-money">800 monedas</span></td>
+                        <td>Parque del Cálculo Mental[cite: 4]</td>
+                        <td><code>(350 + 150) × 2 - 200</code>[cite: 4]</td>
+                        <td><span class="tag-money">800 monedas</span>[cite: 4]</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
+    <!-- Sección 4: Tarjetas de Comodín -->
     <section id="arca" class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <h2>Ejemplos de Arca Comunal</h2>
-                <p>Preguntas de análisis de razonamiento lógico-matemático.</p>
+                <h2>Ejemplos de Comodines</h2>
+                <p>Problemas de razonamiento matemático para resolver en el turno[cite: 4].</p>
             </div>
 
             <div class="arca-grid">
                 <div class="arca-card">
                     <h4>Desafío #1</h4>
-                    <p>Un jugador gana 250 puntos y luego recibe 175 más. ¿Cuántos puntos tiene en total?</p>
-                    <div class="arca-answer">
-                        <span>Respuesta:</span> <strong>425 puntos</strong>
-                    </div>
+                    <p>Un jugador gana 250 puntos y luego recibe 175 más. ¿Cuántos puntos tiene en total?[cite: 3, 4]</p>
+                    <div class="arca-answer">Respuesta: <strong>425 puntos</strong>[cite: 3, 4]</div>
                 </div>
                 <div class="arca-card">
                     <h4>Desafío #2</h4>
-                    <p>Una propiedad cuesta 900 monedas y el jugador paga 350. ¿Cuánto dinero le queda por pagar?</p>
-                    <div class="arca-answer">
-                        <span>Respuesta:</span> <strong>550 monedas</strong>
-                    </div>
+                    <p>Una propiedad cuesta 900 monedas y el jugador paga 350. ¿Cuánto dinero le queda por pagar?[cite: 3, 4]</p>
+                    <div class="arca-answer">Respuesta: <strong>550 monedas</strong>[cite: 3, 4]</div>
                 </div>
                 <div class="arca-card">
                     <h4>Desafío #3</h4>
-                    <p>Un banco entrega 45 monedas a cada jugador de un equipo de 6 personas. ¿Cuántas entrega en total?</p>
-                    <div class="arca-answer">
-                        <span>Respuesta:</span> <strong>270 monedas</strong>
-                    </div>
+                    <p>Un banco entrega 45 monedas a cada jugador de un equipo de 6 personas. ¿Cuántas entrega en total?[cite: 3, 4]</p>
+                    <div class="arca-answer">Respuesta: <strong>270 monedas</strong>[cite: 3, 4]</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Pie de página -->
     <footer class="footer">
-        <div class="container footer-content">
+        <div class="container">
             <p>&copy; 2026 Monopolio Matemático — Sistema de Recursos Didácticos Educativos.</p>
         </div>
     </footer>
